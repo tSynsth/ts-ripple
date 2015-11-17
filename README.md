@@ -15,6 +15,6 @@ Under the plugins section go to installed plugins and activate the ts-ripple plu
 
 
 ## Applying the Code
-Create a new post or pages for using the code, you have to choose from attributes what kind of shortcode attributes that you want to use. For example `[/ts_ripplebutton title=”#body” color=”red”][/ts_ripplebutton]`
+Create a new post or pages for using the code, you have to choose from shortcode attributes what kind of ripple button that you want to create. For example `[/ts_ripplebutton title=”#body” color=”red”]your content[/ts_ripplebutton]`.
 
 
