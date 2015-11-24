@@ -1,0 +1,3 @@
+#. Plugin Name of the plugin/theme
+msgid "TS WP Plugin Template"
+msgstr ""

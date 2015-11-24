@@ -1,0 +1,34 @@
+/*
+ * frontend.scss
+ * Plugin Name: TS WP Plugin Template
+ * Version: 1.0.0
+ *
+ */
+/* line 12, ../sass/frontend.scss */
+.circle {
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
+}
+@keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(0.01);
+    transform: scale(0.01);
+  }
+  100% {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
+}

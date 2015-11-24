@@ -1,0 +1,43 @@
+/*
+ * frontend.scss
+ * Plugin Name: TS WP Plugin Template
+ * Version: 1.0.0
+ *
+ */
+@import "compass";
+
+
+
+
+.circle{
+  background-clip: padding-box; /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.curve-bottom-right{
+
+  @-webkit-keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(.01);
+    transform: scale(.01);
+  }
+
+  100% {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
+}
+
+@keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(.01);
+    transform: scale(.01);
+  }
+
+  100% {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+  }
+}
+}
