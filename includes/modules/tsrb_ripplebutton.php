@@ -63,8 +63,17 @@ if (!class_exists("TS_RippleButton")) {
         {
             extract(shortcode_atts(array(
                 "title" => "",
-                "color" => ""
+                "color" => "",
+                "type" => ""
             ), $atts));
+
+            //CLASS ID
+            if (!empty($id)) {
+                $class_id = 'ts-ptshortcode-' . $id;
+            } else {
+                $rand = rand(1000, 9999);
+                $class_id = 'ts-ptshortcode-' . $rand;
+            }
 
             if (!empty($color == 'red')) {
                 $color = '#ff0000';
@@ -76,12 +85,27 @@ if (!class_exists("TS_RippleButton")) {
                 $color = 'rgba(200,200,200,0.2)';
             }
 
-            $type = '<div id="body">'
+
+                $type = '<div id="body">'
                     .'<div class="wrap">'
-                    . '<a class="box ripple-effect btn btn-default btn-lg" style="display: block;" type=" button" data-ripple-limit="' . $title . '" data-ripple-color="' . $color . '">' . $content . '</a> '
+                    . '<a class="box ripple-effect btn btn-default btn-lg" style="display: block;" type="button" data-ripple-limit="' . $title . '" data-ripple-color="' . $color . '">' . $content . '</a> '
                     . '</div>'
                     . '</div>';
                 return $type;
+
+
+
+//            echo "<script type='text/javascript'>alert('$type');</script>";
+//            $output =
+//                '<div id="body">'
+//                .'<div class="wrap">'
+//                . '<a href="#" class="box ripple-effect" data-ripple-limit="' . $title . '" data-ripple-color="' . $color . '">' . $content . '</a> '
+//                . '</div>'
+//                . '</div>';
+//
+//            return $output;
+
+
         }
 
 

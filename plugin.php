@@ -55,8 +55,6 @@ if (!function_exists('tsrb')) {
 		 * @return object pn
 		 */
 		$instance = tsrb::instance( __FILE__, $_token, $_version );
-		$instance->ptshortcode = TS_PTShortcode::instance( $instance );
-		$instance->ptshortcodeajax = TS_PTShortcodeajax::instance( $instance );
 		$instance->rcshortcode = TS_RippleButton:: instance( $instance );
 		return $instance;
 	}
